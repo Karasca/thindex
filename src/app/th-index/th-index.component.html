@@ -1,0 +1,8 @@
+<input type="text" (input)="filterResults(filter.value)" placeholder="Filter" #filter >
+Results: {{ filteredAlbums.length }} Albums with {{ songcount }} tracks.
+<div *ngFor="let album of filteredAlbums">
+    <h2>{{album.key}} [{{album.year}}]</h2>
+    <div *ngFor="let song of album.val">
+        - {{song.tracknumber}} {{song.title}} [{{song.duration}}] | Index: {{song.index}}
+    </div>
+</div>
