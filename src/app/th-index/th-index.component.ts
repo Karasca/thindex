@@ -68,7 +68,7 @@ export class ThIndexComponent implements OnInit {
   }
 
   getAlbumImage(startIndex:string){
-    return `/assets/img/albumart/${startIndex}.jpg`
+    return `assets/img/albumart/${startIndex}.jpg`
   }
 
   ngOnInit() {
